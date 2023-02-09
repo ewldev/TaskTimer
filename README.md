@@ -1,7 +1,7 @@
 # TaskTimer - an app built with React Native
 
-This app allows you to add a task and then start a timer with a set amount of time.
+This app allows the user to add a task and then start a timer with a set amount of time to the task.
 
-It will also make the phone vibrates when the timer is up. 
+It will sound an alarm and make the phone vibrates when the timer is up. 
 
-The idea to to help you concentrate on completing the task in a more productive way.
+The idea is to help the user be more productive by concentrating on completing the task.
