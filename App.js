@@ -15,7 +15,7 @@ import { TaskHistory } from './src/features/TaskHistory';
 
 export default function App() {
   const [currentSubject, setCurrentSubject] = useState();
-  const [history, setHistory] = useState([]);
+  const [history, setHistory] = useState(['temp task completed']);
   return (
     <SafeAreaView style={styles.container}>
       {!currentSubject ? (
