@@ -9,15 +9,20 @@ import {
 } from 'react-native';
 import Constants from 'expo-constants';
 import { colors } from './src/utils/colors';
-import { Focus } from './src/features/Focus';
+import { Task } from './src/features/Task';
 import { Timer } from './src/features/Timer';
+import { TaskHistory } from './src/features/TaskHistory';
 
 export default function App() {
-  const [currentSubject, setCurrentSubject] = useState('test');
+  const [currentSubject, setCurrentSubject] = useState();
+  const [history, setHistory] = useState([]);
   return (
     <SafeAreaView style={styles.container}>
       {!currentSubject ? (
-        <Focus addSubject={setCurrentSubject} />
+        <>
+          <Task addSubject={setCurrentSubject} />
+          <TaskHistory history={history} />
+        </>
       ) : (
         <Timer 
           focusSubject={currentSubject}

@@ -5,7 +5,7 @@ import { colors } from '../utils/colors';
 import { RoundedButton } from '../components/RoundedButton';
 import { spacing } from '../utils/sizes';
 
-export const Focus = ({ addSubject }) => {
+export const Task = ({ addSubject }) => {
   const [subject, setSubject] = useState(null);
   return (
     <View style={styles.container}>
@@ -24,8 +24,7 @@ export const Focus = ({ addSubject }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  container: {    
   },
   button: {
     justifyContent: 'center',
