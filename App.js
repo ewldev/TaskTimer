@@ -15,7 +15,7 @@ import { TaskHistory } from './src/features/TaskHistory';
 
 export default function App() {
   const [currentSubject, setCurrentSubject] = useState();
-  const [history, setHistory] = useState(['temp task completed']);
+  const [history, setHistory] = useState([]);
   return (
     <SafeAreaView style={styles.container}>
       {!currentSubject ? (
@@ -26,7 +26,9 @@ export default function App() {
       ) : (
         <Timer 
           focusSubject={currentSubject}
-          onTimerEnd={() => {}}
+          onTimerEnd={(subject) => {
+            setHistory([...history, subject])
+          }}
           clearSubject={() => setCurrentSubject(null)}
         />
       )}  
