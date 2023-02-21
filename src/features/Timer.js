@@ -96,12 +96,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    color: colors.white,
+    color: colors.darkGreen,
     fontWeight: 'bold',
     textAlign: 'center',
   },
   task: {
-    color: colors.white,
+    color: colors.darkGreen,
     textAlign: 'center',
   },
 });

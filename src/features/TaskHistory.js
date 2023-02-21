@@ -10,7 +10,7 @@ export const TaskHistory = ({ history }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Things we've focused on:</Text>
+      <Text style={styles.title}>Tasks we've worked on:</Text>
       <FlatList data={history} renderItem={renderItem} />
     </View>
   );
@@ -23,11 +23,11 @@ const styles = StyleSheet.create({
   },
   item: {
     fontSize: fontSizes.md,
-    color: colors.white,
+    color: colors.darkGreen,
     paddingTop: spacing.sm
   },
   title: {
-    color: colors.white,
+    color: colors.darkGreen,
     fontSize: fontSizes.md,
     fontWeight: 'bold',
   },
